@@ -3,22 +3,6 @@ import { PageHeader } from "@/components/PageHeader";
 import { ExternalLink } from "lucide-react";
 
 export const Route = createFileRoute("/certifications")({
-  head: () => ({
-    meta: [
-      { title: "Certifications — Tanveer Kaiser" },
-      {
-        name: "description",
-        content:
-          "Professional certifications in data analytics, machine learning and SQL.",
-      },
-      { property: "og:title", content: "Certifications — Tanveer Kaiser" },
-      {
-        property: "og:description",
-        content: "Professional certifications and credentials.",
-      },
-    ],
-    links: [{ rel: "canonical", href: "/certifications" }],
-  }),
   component: Certifications,
 });
 

@@ -3,22 +3,6 @@ import { ArrowRight } from "lucide-react";
 import { PageHeader } from "@/components/PageHeader";
 
 export const Route = createFileRoute("/skills")({
-  head: () => ({
-    meta: [
-      { title: "Skills — Tanveer Kaiser" },
-      {
-        name: "description",
-        content:
-          "Technical skills: Python, Pandas, NumPy, Matplotlib, Seaborn, Tableau, SQL, and more.",
-      },
-      { property: "og:title", content: "Skills — Tanveer Kaiser" },
-      {
-        property: "og:description",
-        content: "Tools and technologies I work with.",
-      },
-    ],
-    links: [{ rel: "canonical", href: "/skills" }],
-  }),
   component: Skills,
 });
 

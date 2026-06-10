@@ -3,21 +3,6 @@ import { PageHeader } from "@/components/PageHeader";
 import { Mail, ArrowUpRight } from "lucide-react";
 
 export const Route = createFileRoute("/contact")({
-  head: () => ({
-    meta: [
-      { title: "Contact — Tanveer Kaiser" },
-      {
-        name: "description",
-        content: "Get in touch with Tanveer Kaiser for collaborations and opportunities.",
-      },
-      { property: "og:title", content: "Contact — Tanveer Kaiser" },
-      {
-        property: "og:description",
-        content: "Let's work together — reach out anytime.",
-      },
-    ],
-    links: [{ rel: "canonical", href: "/contact" }],
-  }),
   component: Contact,
 });
 

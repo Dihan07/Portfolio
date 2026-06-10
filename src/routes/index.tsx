@@ -4,22 +4,6 @@ import { useEffect, useRef, useState } from "react";
 import portrait from "@/assets/p2.png";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Tanveer Kaiser" },
-      {
-        name: "description",
-        content:
-          "Aspiring Software Quality Engineer skilled in Machine Learning and Data Analytics.",
-      },
-      { property: "og:title", content: "Tanveer Kaiser — Portfolio" },
-      {
-        property: "og:description",
-        content: "Machine Learning, Data Analytics & Software Quality Assurance.",
-      },
-    ],
-    links: [{ rel: "canonical", href: "/" }],
-  }),
   component: Index,
 });
 

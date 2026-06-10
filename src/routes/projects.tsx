@@ -4,22 +4,6 @@ import { ExternalLink } from "lucide-react";
 
 
 export const Route = createFileRoute("/projects")({
-  head: () => ({
-    meta: [
-      { title: "Projects — Tanveer Kaiser" },
-      {
-        name: "description",
-        content:
-          "Machine learning and data analytics projects including fraud detection, digit recognition and recommendation systems.",
-      },
-      { property: "og:title", content: "Projects — Tanveer Kaiser" },
-      {
-        property: "og:description",
-        content: "Selected machine learning and data analytics projects.",
-      },
-    ],
-    links: [{ rel: "canonical", href: "/projects" }],
-  }),
   component: Projects,
 });
 

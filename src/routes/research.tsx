@@ -3,22 +3,6 @@ import { PageHeader } from "@/components/PageHeader";
 import { FileText, Link2 } from "lucide-react";
 
 export const Route = createFileRoute("/research")({
-  head: () => ({
-    meta: [
-      { title: "Research — Tanveer Kaiser" },
-      {
-        name: "description",
-        content:
-          "Published research on credit card fraud detection, data balancing techniques and model interpretability.",
-      },
-      { property: "og:title", content: "Research — Tanveer Kaiser" },
-      {
-        property: "og:description",
-        content: "Peer-reviewed research and publications.",
-      },
-    ],
-    links: [{ rel: "canonical", href: "/research" }],
-  }),
   component: Research,
 });
 

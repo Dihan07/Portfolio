@@ -2,22 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageHeader } from "@/components/PageHeader";
 
 export const Route = createFileRoute("/about")({
-  head: () => ({
-    meta: [
-      { title: "About — Tanveer Kaiser" },
-      {
-        name: "description",
-        content:
-          "Recent CSE graduate passionate about Machine Learning, Data Analytics and Software Quality Assurance.",
-      },
-      { property: "og:title", content: "About — Tanveer Kaiser" },
-      {
-        property: "og:description",
-        content: "Recent CSE graduate passionate about ML and Data Analytics.",
-      },
-    ],
-    links: [{ rel: "canonical", href: "/about" }],
-  }),
   component: About,
 });
 
