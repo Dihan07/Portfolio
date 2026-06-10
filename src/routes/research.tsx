@@ -101,6 +101,7 @@ function PaperCard({ paper }: { paper: (typeof papers)[0] }) {
 }
 
 function Research() {
+  document.title = "Research — Tanveer Kaiser";
   return (
     <section className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
       <PageHeader 

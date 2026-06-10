@@ -139,6 +139,7 @@ const colsClass: Record<number, string> = {
 };
 
 function Certifications() {
+  document.title = "Certifications — Tanveer Kaiser";
   const rows: (typeof certs)[] = [];
   for (let i = 0; i < certs.length; i += COLS) {
     rows.push(certs.slice(i, i + COLS));

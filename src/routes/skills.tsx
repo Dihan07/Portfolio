@@ -42,6 +42,7 @@ const skillGroups = [
 ];
 
 function Skills() {
+  document.title = "Skills — Tanveer Kaiser";
   return (
     <section className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
       <PageHeader

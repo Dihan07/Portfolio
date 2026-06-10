@@ -48,6 +48,7 @@ function useTypingEffect(
 }
 
 function Index() {
+  document.title = "Tanveer Kaiser";
   const typed = useTypingEffect(ROLES);
   const portraitRef = useRef<HTMLDivElement>(null);
   const sectionRef = useRef<HTMLElement>(null);

@@ -147,6 +147,7 @@ const colsClass: Record<number, string> = {
 };
 
 function Projects() {
+  document.title = "Projects — Tanveer Kaiser";
   const rows: (typeof projects)[] = [];
   for (let i = 0; i < projects.length; i += COLS) {
     rows.push(projects.slice(i, i + COLS));
