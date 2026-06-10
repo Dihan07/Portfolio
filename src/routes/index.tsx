@@ -173,7 +173,7 @@ function Index() {
             className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-primary"
             style={{ animationDelay: "0.05s" }}
           >
-            ✦ Welcome to my portfolio
+            ✦ welcome to my harbor
           </p>
 
           <h1 className="font-display text-5xl font-bold leading-tight tracking-tight sm:text-6xl">
