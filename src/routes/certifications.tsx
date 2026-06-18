@@ -38,7 +38,7 @@ const certs = [
   },
   {
     title: "SQL (Basic)",
-    issuer: "365 Data Science",
+    issuer: "Hackerrank",
     image: "/certifications/sql.png",
     credentialUrl:
       "https://www.hackerrank.com/certificates/iframe/aeac880db68e",
@@ -51,7 +51,7 @@ const certs = [
       "https://drive.google.com/file/d/1nC9zAwYCv5CnBo8AEYgn5OCiNsqSRmCP/view?usp=sharing",
   },
   {
-    title: "Introduction to Data Anlytics",
+    title: "Introduction to Data Analytics",
     issuer: "Simplilearn",
     image: "/certifications/analytics.png",
     credentialUrl:

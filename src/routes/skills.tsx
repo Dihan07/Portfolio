@@ -1,6 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { PageHeader } from "@/components/PageHeader";
+import LoadingDots from "@/components/LoadingDots";
+import LoadingScanBlocks from "@/components/LoadingScanBlocks";
 
 export const Route = createFileRoute("/skills")({
   component: Skills,
@@ -45,10 +47,14 @@ function Skills() {
   document.title = "Skills — Tanveer Kaiser";
   return (
     <section className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-      <PageHeader
-        title="Skills"
-        subtitle="The tools and technologies I have worked with and learned over the years. More skills loading ▰▰▰▱"
-      />
+      <PageHeader title="Skills"/>
+      <p className="mt-4 text-center text-lg text-muted-foreground">
+        The tools and technologies I have worked with and learned over the years.
+      </p>
+      <p className="mt-4 text-center text-lg text-muted-foreground">
+        Fetching more skills
+        <LoadingDots />
+      </p>
 
       <div className="mt-14 space-y-8">
         {skillGroups.map((group, gi) => (
@@ -69,7 +75,7 @@ function Skills() {
               {group.skills.map((skill) => (
                 <div
                   key={skill.name}
-                  className="group flex items-center gap-2.5 rounded-xl border border-border bg-card px-4 py-2.5 shadow-[var(--shadow-card)] transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-[var(--shadow-soft)]"
+                  className="group flex items-center gap-2.5 rounded-xl border border-border bg-card px-4 py-2.5  transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-(--shadow-soft)"
                 >
                   <img
                     src={skill.icon}
@@ -91,13 +97,13 @@ function Skills() {
       </div>
 
       {/* CTA callout card */}
-      <div className="animate-fade-up mt-14 flex flex-col items-center gap-4 rounded-2xl border border-border bg-card px-6 py-10 text-center shadow-[var(--shadow-card)] max-w-lg mx-auto">
-        <div className="space-y-1">
+      <div className="animate-fade-up mt-14 flex flex-col items-center gap-4 rounded-2xl border border-border bg-card px-6 py-10 text-center shadow-(--shadow-card) max-w-lg mx-auto">
+        <div className="space-y-1 shadow-(--shadow-card)">
           <p className="text-base font-semibold text-foreground">
             Curious how I apply these?
           </p>
           <p className="text-sm text-muted-foreground">
-            Browse my projects to see these tools in real work.
+            Explore my projects to see these tools in real work.
           </p>
         </div>
         <Link

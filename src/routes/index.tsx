@@ -183,9 +183,9 @@ function Index() {
           </h1>
 
           {/* Typing effect */}
-          <p className="mt-4 flex min-h-[2.5rem] items-center text-2xl font-medium text-primary sm:text-3xl">
+          <p className="mt-4 flex min-h-10 items-center text-2xl font-medium text-primary sm:text-3xl">
             {typed}
-            <span className="ml-0.5 inline-block h-[1.1em] w-[2px] animate-[blink_1s_step-end_infinite] bg-primary align-middle" />
+            <span className="ml-0.5 inline-block h-[1.1em] w-0.5 animate-[blink_1s_step-end_infinite] bg-primary align-middle" />
           </p>
 
           <p className="mt-5 max-w-md text-base text-muted-foreground sm:text-lg">
@@ -210,7 +210,7 @@ function Index() {
               href="https://drive.google.com/file/d/1Z2H8Musm0eJ91GPW-1n6Lrcpeu8sfvYM/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-resume inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-[var(--shadow-soft)] transition-transform hover:-translate-y-0.5"
+              className="btn-resume inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-(--shadow-soft) transition-transform hover:-translate-y-0.5"
             >
               <FileText className="h-4 w-4" /> Resume
             </a>
@@ -298,7 +298,7 @@ function Index() {
               alt="Tanveer Kaiser"
               width={800}
               height={800}
-              className="relative z-10 h-64 w-64 rounded-full object-cover shadow-[var(--shadow-soft)] ring-4 ring-background sm:h-80 sm:w-80 lg:h-96 lg:w-96"
+              className="relative z-10 h-64 w-64 rounded-full object-cover shadow-(--shadow-soft) ring-4 ring-background sm:h-80 sm:w-80 lg:h-96 lg:w-96"
             />
 
             {/* Floating badges */}
