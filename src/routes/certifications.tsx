@@ -38,7 +38,7 @@ const certs = [
   },
   {
     title: "SQL (Basic)",
-    issuer: "365 Data Science",
+    issuer: "HackerRank",
     image: "/certifications/sql.png",
     credentialUrl:
       "https://www.hackerrank.com/certificates/iframe/aeac880db68e",
